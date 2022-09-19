@@ -3,7 +3,8 @@
 # Pr0fund3rD0m4in V.0.1
  Tool for Pentester & BugHunter
 
-![image](https://user-images.githubusercontent.com/13341724/188236438-73ac8847-bc6a-4f68-afc0-244eca76679d.png)
+![image](https://user-images.githubusercontent.com/13341724/191060754-99f99cd9-f552-435c-82a3-e7c73a8ce128.png)
+
 
 
 > Projeto criado para reconhecimento automatizado, a ferramenta é voltada por Pentester, BugHunter e entusiasta em Ethical Hackding, a ferramenta utiliza  wget2 que trabalha em http 2 e é bem mais rapido que o wget, não faça teste em dominio sem permissão, não me responsabilizo pelo mau uso da ferramenta, toda e qualquer utilização para o crime é de inteira responsabilidade de quem utiliza.
