@@ -1,3 +1,6 @@
+#!/bin/bash
+ua="--user-agent='(Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0)'"
+b="--chunk-size=1" # erros de Segmentation fault
 banner()
 {
 echo ":::::::::::'########::'########::::'#####:::'########:'##::::'##:'##::: ##:'########:::'#######::'########:::::::::::::"
@@ -31,8 +34,8 @@ echo -e "\e[38mPs: Nao realize teste em dominios sem permissao\e[0m"
 
 banner2()
 {
-echo -e "\e[33mUse para lista de dominio "l": bash Pr0fund3r-D0m4in-v.0.2.sh vulnweb.com nomearquivo l\e[0m"
-echo -e "\e[33mUse para dominio unico "d": bash Pr0fund3r-D0m4in-v.0.2.sh vulnweb.com nomearquivo d\e[0m"
+echo -e "\e[33mUse para lista de dominio "-l": bash Pr0fund3r-D0m4in-v.0.2.sh lista.txt nomearquivo -l\e[0m"
+echo -e "\e[33mUse para dominio unico "-d": bash Pr0fund3r-D0m4in-v.0.2.sh vulnweb.com nomearquivo -d\e[0m"
 
 }
 
@@ -59,7 +62,7 @@ rm debug1-$2 debug2-$2 debug3-$2 debug4-$2 1>/dev/null 2>/dev/null
 
 #banner
 
-if [[ $3 == "l" ]]
+if [[ $3 == "-l" ]]
 then
 echo -e "\e[33m################   Recon etapa 1 ##################### ok\e[0m" 
 
@@ -82,7 +85,7 @@ echo -e "\e[33m################   Recon etapa 1 ##################### ok\e[0m"
 
 
 
-elif [[ $3 == "d" ]]
+elif [[ $3 == "-d" ]]
 then 
     echo -e "\e[33m################   Recon etapa 1 ##################### ok\e[0m" 
 
